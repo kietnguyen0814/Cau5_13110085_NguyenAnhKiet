@@ -18,11 +18,11 @@ class ViewController: UIViewController {
         
         print (person.fullName)
         
-        let xyz1 = XYZ(name: "Anh Kiet", prefix: nil)
-        print(xyz1.fullName)
+        let name1 = Name(name: "Anh Kiet", prefix: nil)
+        print(name1.fullName)
         
-        let xyz2 = XYZ(name: "Anh Kiet", prefix: "Nguyen")
-        print(xyz2.fullName)
+        let name2 = Name(name: "Anh Kiet", prefix: "Nguyen")
+        print(name2.fullName)
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,7 +41,7 @@ struct Person: FullyNamed {
     var fullName: String
 }
 
-class XYZ: FullyNamed {
+class Name: FullyNamed {
     var prefix: String?
     var name: String
     
